@@ -5,7 +5,6 @@ import { validationResult } from 'express-validator';
 import { ApiError } from '../exeptions/api-error';
 import { userViewModel } from '../interfaces/user-view-model';
 import { tokensViewModel } from '../interfaces/tokens-view-model';
-import userRepository from '../repositories/user-repository';
 
 class AuthController {
     async registration(
