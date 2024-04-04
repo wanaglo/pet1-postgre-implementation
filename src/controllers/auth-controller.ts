@@ -61,7 +61,7 @@ class AuthController {
 
             await userService.logout(refreshToken);
 
-            res.json({ meessage: 'Вы вышли из аккаунта' });
+            res.json({ message: 'Вы вышли из аккаунта' });
         } catch (err) {
             next(err);
         }
