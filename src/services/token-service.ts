@@ -24,6 +24,7 @@ class TokenService {
         try {
             return jwt.verify(accessToken, process.env.JWT_ACCESS_SECRET!);
         } catch (err) {
+            console.log(err);
             return null;
         }
     }
@@ -32,6 +33,7 @@ class TokenService {
         try {
             return jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET!);
         } catch (err) {
+            console.log(err);
             return null;
         }
     }
